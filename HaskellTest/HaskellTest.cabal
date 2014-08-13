@@ -9,5 +9,7 @@ executable HaskellTest
   main-is:         Main.hs
   build-depends:   base >= 4
   ghc-options:     -Wall
-  other-modules:   Module1
+  other-modules:   
+                   Module1,
+                   TypeClasses
 
