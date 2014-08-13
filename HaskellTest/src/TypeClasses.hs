@@ -22,3 +22,6 @@ instance Num MyNum where
 other :: MyNum -> MyNum
 other Zero = One
 other One = Zero
+
+-- Ćwiczenie 1: zaimplementujcie wsparcie dla operacji +, * itp. dla typu Bool
+

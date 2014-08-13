@@ -11,5 +11,8 @@ executable HaskellTest
   ghc-options:     -Wall
   other-modules:   
                    Module1,
-                   TypeClasses
+                   TypeClasses,
+                   Solutions.TypeClasses,
+                   Monads1,
+                   Monads2
 

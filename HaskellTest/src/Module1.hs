@@ -16,8 +16,15 @@ shout = putStrLn "Pij piwo, będziesz wielki!" -- output
 num1 :: Integer -- każda wartość dostępna publicznie powinna (choć nie musi) mieć deklarację typu
 num1 = 512
 
-lst :: [Integer] -- lista skończona
+-- Taka sama lista skończona zainicjalizowana na kilka sposobów:
+lst :: [Integer]
 lst = [1, 2, 3]
+
+lst' :: [Integer]
+lst' = 1 : [2, 3]
+
+lst'' :: [Integer]
+lst'' = [1 .. 3]
 
 tuple :: (Integer, String) -- krotka
 tuple = (2, "piwa")
@@ -85,6 +92,15 @@ five = (+) 2 3
     
 -- Deklaracja typu (nazwa musi się zaczynać wielką literą!):
 data Drink = Beer | Cider | Vodka Double deriving (Show, Eq, Ord)
+
+-- Rekord
+data Person = Person { firstName :: String, lastName :: String } deriving (Show, Eq, Ord) 
+
+p1 :: Person
+p1 = Person "Władimir" "Putin"
+
+p2 :: Person
+p2 = Person { lastName = "Miedwiediew", firstName = "Dmitrij" }
 
 -- Synonim typu:
 type Numbers = [Integer]
