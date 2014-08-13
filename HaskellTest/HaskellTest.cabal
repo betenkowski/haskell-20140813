@@ -14,5 +14,7 @@ executable HaskellTest
                    TypeClasses,
                    Solutions.TypeClasses,
                    Monads1,
-                   Monads2
+                   Monads2,
+                   Laziness,
+                   Solutions.Laziness
 
